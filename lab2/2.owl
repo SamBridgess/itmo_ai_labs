@@ -1,0 +1,1007 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#"
+     xml:base="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker_has_gadget -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker_has_gadget">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker_gadget"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender_has_gadget -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender_has_gadget">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender_gadget"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#gadget_for_sub_role -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#gadget_for_sub_role">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#sub_role_gadget"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#gadget"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#has_role -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#has_role">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#operator"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#sub_role_gadget -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#sub_role_gadget">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#gadget"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#operator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker_gadget -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker_gadget">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#gadget"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#operator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender_gadget -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender_gadget">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#gadget"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#gadget -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#gadget"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#operator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#operator"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#role"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#alibi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#alibi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#observation_blocker"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#proximity_alarm"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#fragger"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#intel_gatherer"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#preparer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#amaru -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#amaru">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#hard_breach_charge"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#stun_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#fragger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#area_denial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#area_denial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#ash -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#ash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#breach_charge"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#claymore"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#fragger"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#soft_breacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#bandit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#bandit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#barbed_wire"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#c4"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#breach_denial"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#fragger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#barbed_wire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#barbed_wire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender_gadget"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#blackbeard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#blackbeard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#claymore"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_emp_grenade"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#stun_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#fragger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#blitz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#blitz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#breach_charge"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#smoke_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#fragger"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#shield"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#breach_charge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#breach_charge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker_gadget"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#breach_charge"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#claymore"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#fragger"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#soft_breacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#breach_denial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#breach_denial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#buck -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#buck">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#hard_breach_charge"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#stun_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#soft_breacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#bulletproof_camera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#bulletproof_camera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender_gadget"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#c4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#c4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender_gadget"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#capitao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#capitao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#claymore"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#hard_breach_charge"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#area_denial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#castle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#castle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#bulletproof_camera"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#proximity_alarm"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#area_denial"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#preparer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#caveira -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#caveira">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_grenade"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#observation_blocker"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#proximity_alarm"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#fragger"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#intel_gatherer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#clash -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#clash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#barbed_wire"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#shield"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#claymore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#claymore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker_gadget"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#breach_charge"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#claymore"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#sniper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#deployable_shield -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#deployable_shield">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender_gadget"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#doc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#doc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#barbed_wire"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#bulletproof_camera"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#healer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#dokkaebi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#dokkaebi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_emp_grenade"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#smoke_grenade"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#stun_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#intel_gatherer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#echo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#echo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#deployable_shield"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#area_denial"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#intel_gatherer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#ela -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#ela">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#barbed_wire"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#deployable_shield"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#observation_blocker"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#fragger"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#trapper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#finka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#finka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#smoke_grenade"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#stun_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#fragger"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#healer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#frag_grenade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#frag_grenade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker_gadget"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#fragger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#fragger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#frost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#frost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#bulletproof_camera"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#deployable_shield"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#preparer"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#trapper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#fuze -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#fuze">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#breach_charge"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#hard_breach_charge"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#smoke_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#fragger"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#shield"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#utility_remover"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#glaz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#glaz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#claymore"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#frag_grenade"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#smoke_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#sniper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#gonne6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#gonne6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker_gadget"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#goyo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#goyo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#bulletproof_camera"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_grenade"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#proximity_alarm"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#area_denial"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#preparer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#gridlock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#gridlock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#breach_charge"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_emp_grenade"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#smoke_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#area_denial"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#hard_breach_charge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#hard_breach_charge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker_gadget"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#hard_breacher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#hard_breacher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#role"/>
+        <sub_role_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#hard_breach_charge"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#healer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#healer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#hibana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#hibana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#breach_charge"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#stun_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#hard_breacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_emp_grenade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_emp_grenade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker_gadget"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_grenade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_grenade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender_gadget"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#intel_denial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#intel_denial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#intel_gatherer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#intel_gatherer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#role"/>
+        <sub_role_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#bulletproof_camera"/>
+        <sub_role_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#proximity_alarm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#iq -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#iq">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#breach_charge"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#claymore"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#utility_remover"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#jackal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#jackal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#claymore"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#smoke_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#intel_gatherer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#jager -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#jager">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#bulletproof_camera"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#observation_blocker"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#fragger"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#utility_remover"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#kaid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#kaid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#barbed_wire"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#c4"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#observation_blocker"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#breach_denial"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#preparer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#kali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#kali">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#breach_charge"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#claymore"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#sniper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#kapkan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#kapkan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#c4"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#trapper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#lesion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#lesion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#bulletproof_camera"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#trapper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#lion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#lion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#claymore"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_emp_grenade"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#stun_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#intel_gatherer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#maestro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#maestro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#barbed_wire"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_grenade"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#observation_blocker"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#intel_gatherer"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#preparer"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#utility_remover"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#maverick -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#maverick">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#claymore"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#stun_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#hard_breacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#mira -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#mira">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#c4"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#proximity_alarm"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#area_denial"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#preparer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#montagne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#montagne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#hard_breach_charge"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_emp_grenade"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#smoke_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#shield"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#mozzie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#mozzie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#barbed_wire"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#c4"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#intel_denial"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#intel_gatherer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#mute -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#mute">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#bulletproof_camera"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#c4"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#breach_denial"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#intel_denial"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#preparer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#nokk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#nokk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#frag_grenade"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#hard_breach_charge"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_emp_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#fragger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#nomad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#nomad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#breach_charge"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#stun_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#intel_gatherer"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#trapper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#observation_blocker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#observation_blocker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender_gadget"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#preparer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#preparer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#role"/>
+        <sub_role_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_grenade"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#proximity_alarm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#proximity_alarm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender_gadget"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#pulse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#pulse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#c4"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#deployable_shield"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#observation_blocker"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#intel_gatherer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#rook -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#rook">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_grenade"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#observation_blocker"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#proximity_alarm"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#shield -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#shield">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#sledge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#sledge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#frag_grenade"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_emp_grenade"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#stun_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#soft_breacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#smoke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#smoke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#barbed_wire"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#deployable_shield"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#area_denial"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#preparer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#smoke_grenade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#smoke_grenade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker_gadget"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#sniper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#sniper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#soft_breacher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#soft_breacher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#role"/>
+        <sub_role_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#breach_charge"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#stun_grenade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#stun_grenade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker_gadget"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#support -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#support">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#tachanka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#tachanka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#barbed_wire"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#deployable_shield"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#area_denial"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#preparer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#thatcher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#thatcher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#breach_charge"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#claymore"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#utility_remover"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#thermite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#thermite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#smoke_grenade"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#stun_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#hard_breacher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#trapper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#trapper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#twitch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#twitch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#claymore"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#smoke_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#utility_remover"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#utility_remover -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#utility_remover">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#role"/>
+        <sub_role_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#gonne6"/>
+        <sub_role_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_emp_grenade"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#valkyrie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#valkyrie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#c4"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#intel_gatherer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#vigil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#vigil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#bulletproof_camera"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#fragger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#wamai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#wamai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#impact_grenade"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#proximity_alarm"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#utility_remover"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#warden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#warden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#defender"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#c4"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#deployable_shield"/>
+        <defender_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#observation_blocker"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#ying -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#ying">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#hard_breach_charge"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#smoke_grenade"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#fragger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#zofia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#zofia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#attacker"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#breach_charge"/>
+        <attacker_has_gadget rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#claymore"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#fragger"/>
+        <has_role rdf:resource="http://www.semanticweb.org/sam/ontologies/2023/8/untitled-ontology-11#soft_breacher"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
